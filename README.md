@@ -10,3 +10,7 @@ java -jar llm-provider.jar
 ```
 ANTHROPIC_BASE_URL=http://localhost:808 claude
 ```
+
+**CODE IS CHEAP, SHOW ME THE TALK**：本项目基本由 AI 生成，本人不负责维护，TALK 列表就不导出了，因为过程其实也挺复杂的，有时间也许会专门整理复盘一下。prompts.md 有两个最初始的提示词。
+
+欢迎关注公众号 iptton2 
