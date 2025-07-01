@@ -1,0 +1,31 @@
+### fetch apiToken
+GET https://api.github.com/copilot_internal/v2/token
+Authorization: token ${key from file}
+Accept: application/json
+
+### fetch supported models
+GET https://api.githubcopilot.com/models
+Authorization: Bearer ${key from copilot_internal request}
+Editor-Version: Neovim/0.6.1
+Content-Type: application/json
+Copilot-Integration-Id: vscode-chat
+
+### Send POST to github copilot
+POST https://api.githubcopilot.com/chat/completions
+Authorization: Bearer ${key from copilot_internal request}
+Editor-Version: Zed/1.89.3
+Content-Type: application/json
+Copilot-Integration-Id: vscode-chat
+
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi!"
+    }
+  ],
+  "intent": false,
+  "n": 2,
+  "temperature": 0.1,
+  "stream": false
+}

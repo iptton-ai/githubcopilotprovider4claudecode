@@ -8,5 +8,5 @@ java -jar llm-provider.jar
 然后再启动 claude
 
 ```
-ANTHROPIC_BASE_URL=http://localhost:8080 claude
+ANTHROPIC_BASE_URL=http://localhost:808 claude
 ```
